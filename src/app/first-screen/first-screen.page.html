@@ -1,0 +1,47 @@
+<!-- <ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="end">
+            <ion-button [routerLink]="['/home']">
+              Sign Out
+            </ion-button>
+          </ion-buttons>
+    </ion-toolbar>
+  </ion-header> -->
+
+  <ion-header>
+      <ion-toolbar color="light">
+        <ion-buttons slot="start">
+          <ion-back-button
+              [text]="buttonText"
+              [icon]="buttonIcon">
+          </ion-back-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+
+<ion-content color="primary" padding>
+  <form>
+    <ion-grid>
+        <ion-row color="primary" justify-content-center>
+          <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+            <div text-center>
+              <h3>Please select departure and destination</h3>
+            </div>
+            <div padding>
+              <ion-item>
+                <ion-input name="email" type="email" placeholder="Departure" ngModel required></ion-input>
+              </ion-item>
+            </div>
+            <div padding>
+              <ion-item>
+                <ion-input name="password" type="password" placeholder="Destination" ngModel required></ion-input>
+              </ion-item>
+            </div>
+            <div padding>
+             <ion-button size="large"  type="submit"  expand="block" [routerLink]="['/map-screen']">Calculate Route</ion-button>
+            </div>
+          </ion-col>
+         </ion-row>
+      </ion-grid>
+    </form>
+</ion-content>

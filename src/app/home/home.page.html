@@ -1,14 +1,37 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
+  <ion-toolbar color="light">
+    <ion-title color="primary" class="ion-text-center">
+      Trip Planner
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+
+<ion-content color="primary" class="bg-image no-scroll" padding>
+  <form> 
+    <ion-grid>
+      <ion-row color="primary" justify-content-center>
+        <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+          <div text-center>
+            <h3>Login with Facebook</h3>
+          </div>
+          <div padding>
+            <ion-item>
+              <ion-input name="email" type="email" placeholder="Facebook E-mail" ngModel required></ion-input>
+            </ion-item>
+          </div>
+          <div padding>
+            <ion-item>
+              <ion-input name="password" type="password" placeholder="Facebook Password" ngModel required></ion-input>
+            </ion-item>
+          </div>
+          <div padding>
+           <ion-button size="large"  type="submit"  expand="block" [routerLink]="['/first-screen']">Login</ion-button>
+          </div>
+        </ion-col>
+       </ion-row>
+    </ion-grid>
+  </form>
 </ion-content>
+
+
