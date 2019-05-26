@@ -11,10 +11,7 @@
   <ion-header>
       <ion-toolbar color="light">
         <ion-buttons slot="start">
-          <ion-back-button
-              [text]="buttonText"
-              [icon]="buttonIcon">
-          </ion-back-button>
+          <ion-button (click)="doFbLogout()"></ion-button>
         </ion-buttons>
       </ion-toolbar>
     </ion-header>
@@ -38,7 +35,7 @@
               </ion-item>
             </div>
             <div padding>
-             <ion-button size="large"  type="submit"  expand="block" [routerLink]="['/map-screen']">Calculate Route</ion-button>
+             <ion-button size="large"  type="submit"  expand="block" [routerLink]="['/map-screen']">Start Trip</ion-button>
             </div>
           </ion-col>
          </ion-row>
