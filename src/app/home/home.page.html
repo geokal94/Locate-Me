@@ -1,37 +1,21 @@
-<ion-header>
-  <ion-toolbar color="light">
-    <ion-title color="primary" class="ion-text-center">
-      Trip Planner
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-
-<ion-content color="primary" class="bg-image no-scroll" padding>
-  <!-- <form>  -->
+<ion-content class="bg-image" padding>
     <ion-grid>
       <ion-row color="primary" justify-content-center>
         <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
           <div text-center>
-            <h3>Login with Facebook</h3>
+            <h1>Trip Planner</h1>
+            <h3>Schedule your next trip</h3>
           </div>
-          <!-- <div padding>
-            <ion-item>
-              <ion-input name="email" type="email" placeholder="Facebook E-mail" ngModel required></ion-input>
-            </ion-item>
+          <div class="mt" padding-top>
+           <ion-button size="large"  (click)="doFbLogin()"  expand="block">
+              <ion-icon slot="start" name="logo-facebook"></ion-icon> Sign In</ion-button>
           </div>
-          <div padding>
-            <ion-item>
-              <ion-input name="password" type="password" placeholder="Facebook Password" ngModel required></ion-input>
-            </ion-item>
-          </div> -->
-          <div padding>
-           <ion-button size="large"  (click)="doFbLogin()"  expand="block">Login</ion-button>
+          <div text-center>
+            <h6>Don't have an account? <a href="https://www.facebook.com/help/">Register</a></h6>
           </div>
-        </ion-col>
+          </ion-col>
        </ion-row>
     </ion-grid>
-  <!-- </form> -->
 </ion-content>
 
 

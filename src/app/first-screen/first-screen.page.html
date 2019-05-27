@@ -1,22 +1,12 @@
-<!-- <ion-header>
-    <ion-toolbar color="primary">
-        <ion-buttons slot="end">
-            <ion-button [routerLink]="['/home']">
-              Sign Out
-            </ion-button>
-          </ion-buttons>
-    </ion-toolbar>
-  </ion-header> -->
+<ion-header>
+  <ion-toolbar class="hdr-color">
+    <ion-buttons slot="start">
+       <ion-button id="sign-out-button" (click)="doFbLogout()"><ion-icon name="log-out"></ion-icon> Sign Out</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
 
-  <ion-header>
-      <ion-toolbar color="light">
-        <ion-buttons slot="start">
-          <ion-button (click)="doFbLogout()"></ion-button>
-        </ion-buttons>
-      </ion-toolbar>
-    </ion-header>
-
-<ion-content color="primary" padding>
+<ion-content class="bg-image" padding>
   <form>
     <ion-grid>
         <ion-row color="primary" justify-content-center>

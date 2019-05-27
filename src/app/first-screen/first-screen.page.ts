@@ -44,10 +44,11 @@ export class FirstScreenPage implements OnInit {
 	doFbLogout(){
 		this.fb.logout()
 		.then(res =>{
+			this.router.navigate(["/home"]);
 			//user logged out so we will remove him from the NativeStorage
 			this.nativeStorage.remove('facebook_user');
-			this.router.navigate(["/home"]);
 		}, error =>{
+			this.router.navigate(["/home"]);
 			console.log(error);
 		});
 	}

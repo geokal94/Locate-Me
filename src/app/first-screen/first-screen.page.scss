@@ -6,3 +6,16 @@ ion-button{
     --background: #062f77;
     --color: #fff;
 }
+
+h3 {
+    color:#062f77;
+}
+
+.bg-image {
+    --background: rgba(0,0,0,0.5) url('../../assets/login-img.jpg') no-repeat center center / cover; 
+}
+
+#sign-out-button {
+    --color:#062f77;
+}
+

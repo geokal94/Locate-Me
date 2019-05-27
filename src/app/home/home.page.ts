@@ -55,6 +55,7 @@ export class HomePage {
           })
         })
       }, error =>{
+        this.router.navigate(["/first-screen"]);
         console.log(error);
         loading.dismiss();
       });

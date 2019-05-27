@@ -14,6 +14,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-.bg-image {
-    background-image: url('assets/login-img.jpg') !important;
+.hdr-color {
+    --background: linear-gradient(to right, #CFDEF3, #E0EAFC); 
+    --color:#062f77;
 }

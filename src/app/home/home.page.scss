@@ -4,12 +4,20 @@ ion-item{
 }
 ion-button{
     --background: #062f77;
+    --padding-bottom:0;
 }
 
-/* .bg-image {
-    --background: url('../../assets/login-img.jpg') no-repeat center center fixed;
-    --background-size: 200px 200px;
+.bg-image {
+    --background: rgba(0,0,0,0.5) url('../../assets/login-img.jpg') no-repeat center center / cover; 
   }
-  .no-scroll {
-    --overflow: hidden;
-  } */
+h1{
+    font-size:30px;
+}
+
+h1,h3,h6 {
+      color:#062f77;
+}
+
+.mt {
+      margin-top:30px;
+}
