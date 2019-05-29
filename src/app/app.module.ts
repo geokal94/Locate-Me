@@ -12,6 +12,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from "@angular/common/http";
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
 import { Facebook } from '@ionic-native/facebook/ngx';
+import { NativeGeocoder } from '@ionic-native/native-geocoder/ngx';
+import { GoogleMaps } from '@ionic-native/google-maps';
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,8 +23,10 @@ import { Facebook } from '@ionic-native/facebook/ngx';
     StatusBar,
     SplashScreen,
     Geolocation,
+    NativeGeocoder,
     NativeStorage,
     Facebook,
+    GoogleMaps,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
