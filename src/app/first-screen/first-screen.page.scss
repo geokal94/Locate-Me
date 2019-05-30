@@ -1,6 +1,7 @@
 ion-item{
     --background: #3880ff;
     --color: #fff;
+    --border-radius:0;
 }
 ion-button{
     --background: #062f77;
@@ -12,10 +13,19 @@ h3 {
 }
 
 .bg-image {
-    --background: rgba(0,0,0,0.5) url('../../assets/login-img.jpg') no-repeat center center / cover; 
+    --background: url('../../assets/login-img.jpg') no-repeat center center / cover; 
 }
 
 #sign-out-button {
-    --color:#062f77;
+    --background: none;
+    --color: #3880ff;
 }
 
+ion-list {
+    --border-radius: none !important;
+}
+
+ion-searchbar {
+    --background:none;
+    --border-radius:20px !important;
+}

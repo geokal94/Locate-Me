@@ -1,17 +1,8 @@
-/* .map {
-    height: 100%;
-  } */
 #map_canvas {
   width: 90%;
   height: 100%;
   border: 1px solid red;
 }
-
-ion-toolbar {
-  --background: transparent;
-  --ion-color-base: transparent !important;
-  }
- 
  
 #address {
   padding: 10px;
@@ -37,4 +28,9 @@ ion-toolbar {
     margin-left: -21px;
     margin-top: -41px;
   }
+}
+
+ion-back-button {
+    --background: none;
+    --color: #3880ff;
 }

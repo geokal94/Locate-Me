@@ -1,10 +1,10 @@
 <ion-header>
-  <ion-toolbar >
+  <ion-toolbar class="hdr-color">
   <ion-row>
     <ion-col text-start padding-top>
-      <ion-back-button></ion-back-button>
+      <ion-back-button text="Back"></ion-back-button>
     </ion-col>
-    <ion-col text-end>
+    <ion-col text-end padding-top>
       <ion-button (click)="loadMap()" shape="round" fill="outline">
         <ion-icon slot="start" name="locate"></ion-icon>
         Locate Me
@@ -14,11 +14,6 @@
 </ion-toolbar>
 </ion-header>
 
-<ion-content fullscreen>
-  <!-- <div class="map-wrapper"> 
-     <div id="map_center">
-      <img src="../../assets/icon/center_marker.png" />
-    </div> -->
+<ion-content>
     <div #map id="map"></div>
- <!-- </div> -->
 </ion-content>

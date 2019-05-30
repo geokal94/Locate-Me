@@ -1,34 +1,33 @@
 <ion-header>
   <ion-toolbar class="hdr-color">
-    <ion-buttons slot="start">
-       <ion-button id="sign-out-button" (click)="doFbLogout()"><ion-icon name="log-out"></ion-icon> Sign Out</ion-button>
+    <ion-buttons slot="end">
+       <ion-button id="sign-out-button" (click)="doFbLogout()"><ion-icon name="log-out" padding></ion-icon> Sign Out</ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="bg-image" padding>
-  <form>
+ 
     <ion-grid>
         <ion-row color="primary" justify-content-center>
           <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
             <div text-center>
-              <h3>Please select departure and destination</h3>
+              <h3>Please select a location</h3>
             </div>
             <div padding>
-              <ion-item>
-                <ion-input name="email" type="email" placeholder="Departure" ngModel required></ion-input>
-              </ion-item>
+                <ion-searchbar [(ngModel)]="autocomplete.input" (ionInput)="updateSearchResults()" placeholder="Select Location"></ion-searchbar>
+                <ion-list [hidden]="autocompleteItems.length == 0">
+                  <ion-item *ngFor="let item of autocompleteItems" tappable (click)="selectSearchResult(item)">
+                    {{ item.description }}
+                  </ion-item>
+                </ion-list>
             </div>
+            
             <div padding>
-              <ion-item>
-                <ion-input name="password" type="password" placeholder="Destination" ngModel required></ion-input>
-              </ion-item>
-            </div>
-            <div padding>
-             <ion-button size="large"  type="submit"  expand="block" [routerLink]="['/map-screen']">Start Trip</ion-button>
+             <ion-button size="large"  type="submit"  expand="block" [routerLink]="['/map-screen']">Locate Me</ion-button>
             </div>
           </ion-col>
          </ion-row>
       </ion-grid>
-    </form>
+   
 </ion-content>
